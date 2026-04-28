@@ -66,6 +66,28 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
+## 5. Ambiguity First, Fast Feedback
+
+**If the request is underspecified, clarify before coding and do not go silent.**
+
+For ambiguous implementation requests:
+- Do not start coding yet.
+- Ask one short clarifying question before using tools when multiple reasonable implementations exist.
+- If you need to inspect the workspace to frame the question, send a brief progress update first.
+- Produce a user-visible reply before any non-trivial exploration or implementation.
+- Default behavior:
+  1. State the ambiguity in one sentence.
+  2. Ask one concrete question.
+  3. Wait for the answer.
+
+Bad:
+- User: "I need a script to rename files"
+- Assistant: starts searching the repo and writing code
+
+Good:
+- User: "I need a script to rename files"
+- Assistant: "The rename rule is missing. Do you need text replacement, extension changes, prefix/suffix changes, or an explicit name mapping?"
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
