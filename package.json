@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "oc-plugin-karpathy-guidelines",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "OpenCode plugin that registers the karpathy-guidelines skill and injects it into new sessions.",
   "license": "MIT",
   "type": "module",
